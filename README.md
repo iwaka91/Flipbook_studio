@@ -18,7 +18,9 @@ Anda dapat mencoba pembaca mandiri pada [contoh flipbook](examples/Contoh_Flipbo
 - Pratinjau flipbook responsif desktop dan mobile.
 - Animasi page curl / lembar kertas melengkung dengan bayangan dan dukungan tarik halaman.
 - Suara lembar dibalik, dapat diaktifkan/dinonaktifkan pembaca.
-- Editor urutan halaman dan pengaturan ukuran/kualitas.
+- Editor urutan halaman dan pengaturan ukuran/kualitas, dengan pilihan mutu cepat (Kecil, Sedang, Jernih), format gambar WebP (otomatis JPG bila tidak didukung), dan perkiraan ukuran HTML/ZIP.
+- Pencarian kata di pembaca: daftar hasil, sorotan kata di halaman, dan tombol hasil berikutnya/sebelumnya.
+- Tampilan pembaca otomatis 1 halaman (potret) atau 2 halaman (landscape) saat layar diputar, dengan tombol kunci putar.
 - Ekspor HTML tunggal atau paket ZIP yang dapat dibuka secara offline.
 - Panel **Tentang** berisi kredit, informasi teknologi, dan identitas pembuat.
 
@@ -27,7 +29,7 @@ Anda dapat mencoba pembaca mandiri pada [contoh flipbook](examples/Contoh_Flipbo
 - Mesin pembuat dapat dibuka dari file HTML lokal.
 - **Impor PDF membutuhkan koneksi internet** untuk memuat PDF.js. Setelah PDF dikonversi menjadi gambar halaman, flipbook hasil ekspor bisa digunakan tanpa internet.
 - Page curl memakai Canvas 2D untuk menyimulasikan lengkungan; bukan simulasi fisika 3D sepenuhnya.
-- PDF yang dirender menjadi halaman gambar tidak mempertahankan teks yang bisa diseleksi di flipbook.
+- PDF yang dirender menjadi halaman gambar tidak mempertahankan teks yang bisa diseleksi di flipbook. Teksnya diekstrak saat impor hanya untuk pencarian; PDF hasil pindai tanpa lapisan teks dan halaman dari gambar tidak bisa dicari.
 - HTML tunggal dapat sangat besar bila jumlah halaman banyak; paket ZIP memisahkan aset.
 
 ## Kredit dan lisensi
